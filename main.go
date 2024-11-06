@@ -10,7 +10,8 @@ func main() {
 	cache := cache.New()
 
 	cache.Set("userId", 44)
-	userId := cache.Get("userId")
+	cache.Set("Alice", 22)
+	userId := cache.Get("Alice")
 
 	fmt.Println(userId)
 
